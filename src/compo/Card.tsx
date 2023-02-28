@@ -17,7 +17,7 @@ const Card = () => {
                 <input type="checkbox" name="checkbox" id="checkbox" />
                 <span className="slider"></span>
               </label>
-              <p>
+              <p className="dis-text">
                 Yearly Billing <span className="discount-desktop">25% discount</span>
                 <span className="discount-mobile">-25%</span>
               </p>

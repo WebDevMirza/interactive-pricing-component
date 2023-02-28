@@ -26,9 +26,19 @@
 
   --fs-headlines: 1.5rem;
   --fs-body: 1rem;
-  --fs-pageview: 1.125rem;
+  --fs-pageview: 1rem;
   --fs-price: 2rem;
   --fs-duration: 0.875rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --fs-headlines: 1.875rem;
+    --fs-body: 1rem;
+    --fs-pageview: 1rem;
+    --fs-price: 2rem;
+    --fs-duration: 0.875rem;
+  }
 }
 
 /* ==============================
@@ -39,7 +49,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   font-weight: var(--fw-600);
-  /* background-color: var(--VeryPaleBlue); */
+  background-color: var(--VeryPaleBlue);
   color: var(--GrayishBlue);
   background-image: url(../images/bg-pattern.svg);
   background-repeat: no-repeat;
@@ -70,6 +80,11 @@ main {
   margin-inline: auto;
 }
 
+@media (min-width: 1024px) {
+  .intro p {
+    max-width: fit-content;
+  }
+}
 /* ==============================
 Layout
 ============================== */
@@ -87,4 +102,11 @@ Layout
 
 .card-section {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .intro,
+  .card-section {
+    max-width: 600px;
+  }
 }
