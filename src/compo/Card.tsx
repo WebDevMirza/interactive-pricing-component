@@ -113,7 +113,8 @@ const Card = () => {
             <p>
               <strong className="price">${myRate.price}</strong> /month
             </p>
-            <label className="range-input">
+            <div className="range-input">
+              <label aria-hidden="true"></label>
               <input
                 ref={getRange}
                 type="range"
@@ -124,7 +125,7 @@ const Card = () => {
                 step={25}
                 onChange={rangeChange}
               />
-            </label>
+            </div>
             <div className="duration">
               <p>Monthly Billing</p>
               <label className="switch">
