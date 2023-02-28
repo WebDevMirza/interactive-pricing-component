@@ -114,7 +114,7 @@ const Card = () => {
               <strong className="price">${myRate.price}</strong> /month
             </p>
             <div className="range-input">
-              <label aria-hidden="true"></label>
+              <label htmlFor="range" aria-hidden="true"></label>
               <input
                 ref={getRange}
                 type="range"
