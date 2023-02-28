@@ -26,7 +26,7 @@
   gap: 1.5rem;
 }
 
-#range {
+.range-input {
   grid-area: 2/1/3/2;
   margin: 0 2rem;
 }
@@ -45,7 +45,7 @@
   .interact > :nth-child(2) {
     grid-area: 1/2/2/3;
   }
-  #range {
+  .range-input {
     grid-area: 2/1/3/3;
   }
   .interact > :nth-child(4) {
@@ -216,6 +216,7 @@
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
+  width: 100%;
   height: 35px;
   border-radius: 10px;
   outline: none;

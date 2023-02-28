@@ -113,16 +113,18 @@ const Card = () => {
             <p>
               <strong className="price">${myRate.price}</strong> /month
             </p>
-            <input
-              ref={getRange}
-              type="range"
-              name="range"
-              id="range"
-              min={0}
-              max={100}
-              step={25}
-              onChange={rangeChange}
-            />
+            <label className="range-input">
+              <input
+                ref={getRange}
+                type="range"
+                name="range"
+                id="range"
+                min={0}
+                max={100}
+                step={25}
+                onChange={rangeChange}
+              />
+            </label>
             <div className="duration">
               <p>Monthly Billing</p>
               <label className="switch">
