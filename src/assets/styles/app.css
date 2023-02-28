@@ -52,6 +52,7 @@ body {
   background-color: var(--VeryPaleBlue);
   color: var(--GrayishBlue);
   background-image: url(../images/bg-pattern.svg);
+  background-position: center top;
   background-repeat: no-repeat;
 }
 

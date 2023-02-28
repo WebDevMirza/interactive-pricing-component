@@ -184,7 +184,8 @@
   transition: all 1s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   color: var(--White);
   -webkit-animation: shadow-drop-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -215,9 +216,14 @@
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
-  height: 20px;
+  height: 35px;
   border-radius: 10px;
   outline: none;
+  overflow: hidden;
+}
+
+input:focus-visible {
+  outline: 2px solid var(--StrongCyan);
 }
 
 @media (min-width: 1024px) {
@@ -230,8 +236,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-color: var(--StrongCyan);
   background-image: url(../images/icon-slider.svg);
   background-repeat: no-repeat;
@@ -239,6 +245,9 @@ input[type="range"]::-webkit-slider-thumb {
   transform: translateY(-40%);
   border-radius: 50%;
   cursor: grab;
+  position: relative;
+  box-shadow: var(--SoftCyan) -236px 0 0 200px;
+  clip-path: polygon(-450px 40%, 0% 40%, 0% -40%, 100% -40%, 100% 100%, 0% 100%, 0% 60%, -450px 60%);
 }
 
 input[type="range"]:active::-webkit-slider-thumb {
@@ -246,8 +255,8 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 input[type="range"]::-moz-range-thumb {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-color: var(--StrongCyan);
   background-image: url(../images/icon-slider.svg);
   background-repeat: no-repeat;
@@ -262,8 +271,8 @@ input[type="range"]:active::-moz-range-thumb {
 }
 
 input[type="range"]::-ms-thumb {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-color: var(--StrongCyan);
   background-image: url(../images/icon-slider.svg);
   background-repeat: no-repeat;
