@@ -12,8 +12,9 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ## Screenshot
 
-![](./ss/s1.webp)
-![](./ss/s2.webp)
+
+<img src="./ss/s1.webp" width="1000"/>
+<img src="./ss/s2.webp" width="600"/>
 
 ## What I've Learnt
 
